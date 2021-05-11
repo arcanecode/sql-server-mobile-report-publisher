@@ -14,7 +14,7 @@ Drag the **Year** column and drop it to the left of the Sales Total Including Ta
 
 Click the **Click to execute the query** link to ensure the query runs without issues.
 
-![Sales by Invoice Year Successful Query](images/sales-by-invoice-year-01.png)
+![Sales by Invoice Year Successful Query](../images/sales-by-invoice-year-01.png)
 
 ## Save the query
 
@@ -24,7 +24,7 @@ In the **Look in** area of the dialog, make sure it is set to your report server
 
 Name the file **Sales by Invoice Year.rsd** then click Save.
 
-![Sales by Invoice Year Save Dialog](images/sales-by-invoice-year-02.png)
+![Sales by Invoice Year Save Dialog](../images/sales-by-invoice-year-02.png)
 
 ## Conclusion
 

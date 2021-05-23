@@ -28,15 +28,27 @@ You are now ready to build the query.
 
 ## Build the Query
 
+Expand the **Measures** branch, then the **Sales** branch.
+
+Drag the **Sales Total Including Tax** to the designer area.
+
+Next, expand the **City** dimension, and drag the **Sales Territory** to the designer to the left of the Sales Total Including Tax.
+
+Finally, expand the **Sales Invoice Date** branch. Drag the **Year** column and drop it between the two columns already in the designer.
+
+Click the **Click to execute the query** link to ensure the query runs without issues.
+
+
+![Sales by Year and Territory](../images/sales-by-invoice-year-and-territory-01.png)
 ## Save the query
 
 Use the File menu, the pick Save.
 
 In the **Look in** area of the dialog, make sure it is set to your report server. If not use the folder icon to the right in order to locate your server.
 
-Name the file **filename.rsd** then click Save.
+Name the file **Sales by Year and Territory.rsd** then click Save.
 
-![](path)
+![Sales by Year and Territory](../images/sales-by-invoice-year-and-territory-02.png)
 
 ## Conclusion
 

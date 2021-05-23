@@ -28,15 +28,25 @@ You are now ready to build the query.
 
 ## Build the Query
 
+Expand the **Measures** branch, then the **Sales** branch.
+
+Drag the **Sales Total Including Tax** to the designer area.
+
+Now, expand the **City** dimension, and place the **State Provice** to the designer to the left of the Sales Total Including Tax.
+
+Click the **Click to execute the query** link to ensure the query runs without issues.
+
+![Sales by State](../images/sales-by-state-01.png)
+
 ## Save the query
 
 Use the File menu, the pick Save.
 
 In the **Look in** area of the dialog, make sure it is set to your report server. If not use the folder icon to the right in order to locate your server.
 
-Name the file **filename.rsd** then click Save.
+Name the file **Sales by State.rsd** then click Save.
 
-![](path)
+![Sales by State Save as](../images/sales-by-state-02.png)
 
 ## Conclusion
 

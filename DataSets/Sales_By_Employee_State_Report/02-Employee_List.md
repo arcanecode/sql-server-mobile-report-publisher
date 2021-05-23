@@ -12,7 +12,7 @@ Note that for this dataset we won't be using a measure. All we need is a simple 
 
 Click the **Click to execute the query** link to ensure the query runs without issues.
 
-![Employee List Successful Query](images/sales-by-state-01.png)
+![Employee List Successful Query](../images/employee-list-01.png)
 
 ## Save the query
 
@@ -22,7 +22,7 @@ In the **Look in** area of the dialog, make sure it is set to your report server
 
 Name the file **Employee List.rsd** then click Save.
 
-![Employee List Save Dialog](images/sales-by-state-02.png)
+![Employee List Save Dialog](../images/employee-list-02.png)
 
 ## Conclusion
 

@@ -28,15 +28,27 @@ You are now ready to build the query.
 
 ## Build the Query
 
+Expand the **Measures** branch, then expand **Sales**. Click on **Invoiced Sales Total Including Tax YTD** and drag it into the query area.
+
+Next, grab the **Invoiced Sales Total Including Tax Previous YTD** and drop in into the query designer.
+
+Expand the **Sales Invoice Date** branch.
+
+Drag the **Year** column and drop it to the left of the Invoiced Sales Total Including Tax YTD.
+
+Click the **Click to execute the query** link to ensure the query runs without issues.
+
+![Sales YTD](../images/sales-ytd-01.png)
+
 ## Save the query
 
 Use the File menu, the pick Save.
 
 In the **Look in** area of the dialog, make sure it is set to your report server. If not use the folder icon to the right in order to locate your server.
 
-Name the file **filename.rsd** then click Save.
+Name the file **Sales YTD.rsd** then click Save.
 
-![](path)
+![Sales YTD Save As](../images/sales-ytd-02.png)
 
 ## Conclusion
 

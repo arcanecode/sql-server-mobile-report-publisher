@@ -1,10 +1,8 @@
-# State Employee Sales Data
+# List - Employee
 
 ## Introduction
 
-These instructions walk you through the creation of the State Employee Sales dataset. The dataset is used to populate all of the controls on the report, except for the Employee and State list.
-
-![Category Chart](./../images/sales-dashboard-demo-category-chart.png)
+These instructions walk you through the creation of the List Employee dataset.
 
 ## Launch the Dataset Designer
 
@@ -28,23 +26,13 @@ You are now ready to build the query.
 
 ## Build the Query
 
-Expand the **Measures** branch, then expand **Sales**. Click on **Sales Total Including Tax** and drag it into the query area.
+First, move to the **Employee** branch. Expand it, then drag **Employee** to the query window.
 
-Expand the **City** dimension, then drag the **State Province** onto the query designer.
-
-Go to the **Employee** dimension, then drag its **Employee** attribute onto the designer.
-
-Next, expand the **Sales Invoice Date**. Drag the following fields onto the query designer.
-
-* Year
-* Beginning of Quarter Label Short
-* Beginning of Month Label Short
-* Sales Total Including Tax
-* Beginning of Month
+Note that for this dataset we won't be using a measure. All we need is a simple list of all the employees in the cube. We will use this as a filter selection in one of the reports.
 
 Click the **Click to execute the query** link to ensure the query runs without issues.
 
-![State Employee Sales Dialog](../images/state_employee_sales_01.png)
+![Employee List Successful Query](../images/employee-list-01.png)
 
 ## Save the query
 
@@ -52,9 +40,9 @@ Use the File menu, the pick Save.
 
 In the **Look in** area of the dialog, make sure it is set to your report server. If not use the folder icon to the right in order to locate your server.
 
-Name the file **State Employee Sales.rsd** then click Save.
+Name the file **List Employee.rsd** then click Save.
 
-![State Employee Sales Save Dialog](../images/state_employee_sales_02.png)
+![List Employee Save Dialog](../images/employee-list-02.png)
 
 ## Conclusion
 

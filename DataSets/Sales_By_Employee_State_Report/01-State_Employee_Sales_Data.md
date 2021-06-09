@@ -4,7 +4,7 @@
 
 These instructions walk you through the creation of the State Employee Sales dataset. The dataset is used to populate all of the controls on the report, except for the Employee and State list.
 
-![Category Chart](./../images/sales-dashboard-demo-category-chart.png)
+![State Employee Sales Dashboard](./../images/sales-by-state-employee-dashboard-demo.png)
 
 ## Launch the Dataset Designer
 

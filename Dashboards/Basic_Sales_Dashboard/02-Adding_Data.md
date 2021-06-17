@@ -56,9 +56,16 @@ Once added, you'll see a sample of the data. Note it is in a tab beside the "bog
 
 Using the same steps above, add the remaining datasets to your report:
 
-* Sales Goal
-* Sales Details
-* Sales Over Time by State
-* Sales Tree
+* Sales YTD
+* Sales by Invoice Year
+* Sales by State and Invoice Year
+* Sales by State
+* Sales by Invoice Year and Territory
 
+## Conclusion
 
+When done, you should now see all the datasets across the bottom, along with the simulated datasets provided by the Mobile Report Publisher.
+
+![All Datasets](./../images/add-data-all.png)
+
+You are now ready to move onto the next section, linking the report components to the data.

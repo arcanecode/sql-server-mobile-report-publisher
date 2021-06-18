@@ -6,9 +6,11 @@ It will be broken down into smaller files that will focus on various aspects of 
 
 In part 1, you will see how to constructing the basic report, placing the controls onto the report designer itself.
 
-In the next step, you'll see how to add data to the report, then how to bind data to the controls in the report.
+In the next step, you'll see how to add the data we'll need to the report.
 
-With part 3 you'll go through the report cleanup process, applying good labels and formatting to the dashboard.
+In part 3, you'll learn how to bind our newly added data to the elements in the report.
+
+With part 4 you'll go through the report cleanup process, applying good labels and formatting to the dashboard.
 
 Finally, in parts 4 and 5 you'll see how to build the mobile versions of the report. Part 4 will be the tablet based dashboard, and part 5 will be for the phone.
 

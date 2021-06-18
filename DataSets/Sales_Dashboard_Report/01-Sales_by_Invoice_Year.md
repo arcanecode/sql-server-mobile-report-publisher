@@ -32,7 +32,7 @@ Expand the **Measures** branch, then expand **Sales**. Click on **Sales Total In
 
 Expand the **Sales Invoice Date** branch.
 
-Drag the **Year** column and drop it to the left of the Sales Total Including Tax.
+Drag the **Year Label** column and drop it to the left of the Sales Total Including Tax. Note, be sure to get the Year Label, and not the year. The Year is a numeric value, but the Category Chart will need a text value to categorize on, which is what Year Label provides.
 
 Click the **Click to execute the query** link to ensure the query runs without issues.
 

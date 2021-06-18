@@ -34,10 +34,9 @@ Drag the **Sales Total Including Tax** to the designer area.
 
 Next, expand the **City** dimension, and drag the **Sales Territory** to the designer to the left of the Sales Total Including Tax.
 
-Finally, expand the **Sales Invoice Date** branch. Drag the **Year** column and drop it between the two columns already in the designer.
+Finally, expand the **Sales Invoice Date** branch. Drag the **Year Label** column and drop it between the two columns already in the designer.
 
 Click the **Click to execute the query** link to ensure the query runs without issues.
-
 
 ![Sales by Year and Territory](../images/sales-by-invoice-year-and-territory-01.png)
 ## Save the query

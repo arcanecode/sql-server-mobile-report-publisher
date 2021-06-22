@@ -57,7 +57,6 @@ Once added, you'll see a sample of the data. Note it is in a tab beside the "bog
 Using the same steps above, add the remaining datasets to your report:
 
 * Sales YTD
-* Sales by Invoice Year
 * Sales by State and Invoice Year
 * Sales by State
 * Sales by Invoice Year and Territory
@@ -68,4 +67,4 @@ When done, you should now see all the datasets across the bottom, along with the
 
 ![All Datasets](./../images/add-data-all.png)
 
-You are now ready to move onto the next section, linking the report components to the data.
+You are now ready to move onto the next section, linking the report components to the data, in [03-Adding_Data.md](03-Adding_Data.md).

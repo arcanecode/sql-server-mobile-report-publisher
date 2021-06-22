@@ -62,9 +62,9 @@ In the Size Represents, select the Sales by Invoice Year and Territory dataset. 
 
 Next to it in Group by, select Year_Label.
 
-Now you may need to scroll to the right to find the _Popup labels_ area. In it, pick the **Sales_Territory**.
+Underneath it is the **Custom center value**. Change the drop down to the same Sales by Invoice Year and Territory dataset. The center value should automatically select the Sales Total Including Tax.
 
-Note the popup label is also used to break the box with the year down to smaller boxes, each one representing a state or territory.
+Now you may need to scroll to the right to find the _Popup labels_ area. If you click the drop down, you'll see all of the fields in your dataset. These will appear in the pop up window. Since there's only a few, go ahead and put check boxes by all of them, obviously if you had a lot of fields you should be very selective about what is displayed.
 
 ## Conclusion
 
@@ -72,4 +72,4 @@ Save your work, then click the Preview button. Your dashboard should now be popu
 
 ![Dashbaord with data](./../images/link-003.png)
 
-Looking good so far, next we will work on cleaning up the report.
+Looking good so far, in the next step, [04-Cleaning_Up.md](04-Cleaning_Up.md) we will work on cleaning up the report.

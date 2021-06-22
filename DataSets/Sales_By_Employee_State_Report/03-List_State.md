@@ -34,6 +34,18 @@ Click the **Click to execute the query** link to ensure the query runs without i
 
 ![State List Successful Query](../images/state-list-01.png)
 
+## Sorting the Output
+
+As you see, the data is not sorted alphabetically. We'll use the same technique we used to sort the Employees here.
+
+Click the Design Mode button. In the design mode, we'll append an Order By to the end of the query. Your new query should look like:
+
+```
+EVALUATE SUMMARIZECOLUMNS('City'[State Province]) ORDER BY 'City'[State Province]
+```
+
+Click the execute query at the bottom to ensure your query has no syntax issues, and it now sorts the states alphabetically.
+
 ## Save the query
 
 Use the File menu, the pick Save.

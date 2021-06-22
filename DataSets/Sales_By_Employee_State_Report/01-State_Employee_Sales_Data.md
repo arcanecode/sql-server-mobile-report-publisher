@@ -36,7 +36,7 @@ Go to the **Employee** dimension, then drag its **Employee** attribute onto the 
 
 Next, expand the **Sales Invoice Date**. Drag the following fields onto the query designer.
 
-* Year
+* Year Label (make sure to pick Year Label, and not just Year)
 * Beginning of Quarter Label Short
 * Beginning of Month Label Short
 * Sales Total Including Tax

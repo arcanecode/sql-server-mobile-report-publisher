@@ -1,6 +1,6 @@
 # Linking Report components
 
-In this series of instrucitons, we'll see how to bind the controls on the report to the data that was imported in the previous file [02-Adding_Data.md](02-Adding_Data.md).
+In this series of instructions, we'll see how to bind the controls on the report to the data that was imported in the previous file [02-Adding_Data.md](02-Adding_Data.md).
 
 If you don't have it open, open up the dashboard in the Mobile Report Publisher.
 

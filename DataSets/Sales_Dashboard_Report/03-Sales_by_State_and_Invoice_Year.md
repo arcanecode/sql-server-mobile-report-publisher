@@ -40,6 +40,35 @@ Click the **Click to execute the query** link to ensure the query runs without i
 
 ![Sales by State and Invoice Year](../images/sales-by-state-invoice-year-01.png)
 
+## Sort Order
+
+Now we have a minor issue. The data is not organized into any meaningful order. While the user will have the ability to change the sorting in the simple data grid, it would be nice if it came sorted already to meet the need of our user.
+
+They have said sorting by year first, then state, makes the most sense. We can accomplish this with a little DAX magic.
+
+In the designer, click the Design Mode button.
+
+![](./images/../../images/employee-list-03.png)
+
+This will switch your to the DAX editor. Don't worry if you don't know DAX, what we'll do is very simple.
+
+By default you'll see the query that the report designer created.
+
+```
+EVALUATE SUMMARIZECOLUMNS('City'[State Province], 'Sale Invoice Date'[Year Label], "Sales Total Including Tax", [Sales Total Including Tax])
+```
+
+All we have to do is add an ORDER BY clause to the end, and list the columns to sort by.
+
+Note we can append it to the end of the existing line, or hit ENTER and come to a new line to improve readability.
+
+```
+EVALUATE SUMMARIZECOLUMNS('City'[State Province], 'Sale Invoice Date'[Year Label], "Sales Total Including Tax", [Sales Total Including Tax]) 
+ORDER BY 'Sale Invoice Date'[Year Label], 'City'[State Province]
+```
+
+You can use the execute query link, or click the big red exclamation mark, to run the new query. Once you verified it works you can save it.
+
 ## Save the query
 
 Use the File menu, the pick Save.

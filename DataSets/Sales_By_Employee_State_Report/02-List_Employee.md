@@ -34,13 +34,40 @@ Click the **Click to execute the query** link to ensure the query runs without i
 
 ![Employee List Successful Query](../images/employee-list-01.png)
 
+Note we have an issue though, the names are not in alphabetical order. We can fix this in our query, but will have to edit the DAX that report builder generates.
+
+## Sorting the Output
+
+In the query designers toolbar, click on the Design Mode button.
+
+![Employee List Design Mode](./images/../../images/employee-list-03.png)
+
+This will switch to a mode where you can edit the generated DAX query. Don't worry if you aren't fluent in DAX, this is a simple fix.
+
+The generated query looks like:
+
+```
+EVALUATE SUMMARIZECOLUMNS('Employee'[Employee])
+```
+We simply need to add an `Order By` to the output, along with the column name to sort on.
+
+```
+EVALUATE SUMMARIZECOLUMNS('Employee'[Employee]) ORDER BY 'Employee'[Employee]
+```
+
+Be careful not to click the Design Mode button again, as it will regenerate the original query and you'll lose your modification!
+
+At the bottom simply click Execute Query to test, and you should now see the results sorted by their first name.
+
+![Sorted Output](./images/../../images/employee-list-04.png)
+
 ## Save the query
 
 Use the File menu, the pick Save.
 
 In the **Look in** area of the dialog, make sure it is set to your report server. If not use the folder icon to the right in order to locate your server.
 
-Name the file **List Employee.rsd** then click Save.
+Name the file **List - Employee.rsd** then click Save.
 
 ![List Employee Save Dialog](../images/employee-list-02.png)
 

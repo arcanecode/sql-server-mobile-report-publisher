@@ -33,3 +33,5 @@ Save your work, then hit Preview. Here is the final phone dashboard with the Tec
 ## Conclusion
 
 Congratulations, you've now completed the advanced dashboard!
+
+Well, almost. There is one more optional step. Dashboard have the ability to "Drill Through" to a another dashboard, or a website. You can use this to launch a SSRS Paginated Report. In the next lesson, [07-Drillthru.md](07-Drillthru.md), you'll see how to do it.

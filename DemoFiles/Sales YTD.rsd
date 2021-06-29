@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>/WWI Tabular</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS("Invoiced Sales Total Including Tax YTD", [Invoiced Sales Total Including Tax YTD], "Invoiced Sales Total Including Tax Previous YTD", [Invoiced Sales Total Including Tax Previous YTD])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Invoiced Sales Total Including Tax YTD</MeasureName>
+                    <UniqueName>[Measures].[Invoiced Sales Total Including Tax YTD]</UniqueName>
+                  </ID>
+                  <ItemCaption>Invoiced Sales Total Including Tax YTD</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Invoiced Sales Total Including Tax Previous YTD</MeasureName>
+                    <UniqueName>[Measures].[Invoiced Sales Total Including Tax Previous YTD]</UniqueName>
+                  </ID>
+                  <ItemCaption>Invoiced Sales Total Including Tax Previous YTD</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS("Invoiced Sales Total Including Tax YTD", [Invoiced Sales Total Including Tax YTD], "Invoiced Sales Total Including Tax Previous YTD", [Invoiced Sales Total Including Tax Previous YTD])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Invoiced_Sales_Total_Including_Tax_YTD">
+        <DataField>[Invoiced Sales Total Including Tax YTD]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Invoiced_Sales_Total_Including_Tax_Previous_YTD">
+        <DataField>[Invoiced Sales Total Including Tax Previous YTD]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+  <rd:ReportServerUrl>http://acdev2/ReportServer</rd:ReportServerUrl>
+</SharedDataSet>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>/WWI Tabular</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('City'[State Province], 'Employee'[Employee], 'Sale Invoice Date'[Year Label], 'Sale Invoice Date'[Beginning of Month], 'Sale Invoice Date'[Beginning of Quarter Label Short], 'Sale Invoice Date'[Beginning of Month Label Short], "Sales Total Including Tax", [Sales Total Including Tax])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>City</DimensionName>
+                    <HierarchyName>State Province</HierarchyName>
+                    <HierarchyUniqueName>[City].[State Province]</HierarchyUniqueName>
+                    <LevelName>State Province</LevelName>
+                    <UniqueName>[City].[State Province].[State Province]</UniqueName>
+                  </ID>
+                  <ItemCaption>State Province</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Employee</DimensionName>
+                    <HierarchyName>Employee</HierarchyName>
+                    <HierarchyUniqueName>[Employee].[Employee]</HierarchyUniqueName>
+                    <LevelName>Employee</LevelName>
+                    <UniqueName>[Employee].[Employee].[Employee]</UniqueName>
+                  </ID>
+                  <ItemCaption>Employee</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Year Label</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Year Label]</HierarchyUniqueName>
+                    <LevelName>Year Label</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Year Label].[Year Label]</UniqueName>
+                  </ID>
+                  <ItemCaption>Year Label</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Beginning of Month</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Beginning of Month]</HierarchyUniqueName>
+                    <LevelName>Beginning of Month</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Beginning of Month].[Beginning of Month]</UniqueName>
+                  </ID>
+                  <ItemCaption>Beginning of Month</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Beginning of Quarter Label Short</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Beginning of Quarter Label Short]</HierarchyUniqueName>
+                    <LevelName>Beginning of Quarter Label Short</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Beginning of Quarter Label Short].[Beginning of Quarter Label Short]</UniqueName>
+                  </ID>
+                  <ItemCaption>Beginning of Quarter Label Short</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Beginning of Month Label Short</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Beginning of Month Label Short]</HierarchyUniqueName>
+                    <LevelName>Beginning of Month Label Short</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Beginning of Month Label Short].[Beginning of Month Label Short]</UniqueName>
+                  </ID>
+                  <ItemCaption>Beginning of Month Label Short</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Sales Total Including Tax</MeasureName>
+                    <UniqueName>[Measures].[Sales Total Including Tax]</UniqueName>
+                  </ID>
+                  <ItemCaption>Sales Total Including Tax</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('City'[State Province], 'Employee'[Employee], 'Sale Invoice Date'[Year Label], 'Sale Invoice Date'[Beginning of Month], 'Sale Invoice Date'[Beginning of Quarter Label Short], 'Sale Invoice Date'[Beginning of Month Label Short], "Sales Total Including Tax", [Sales Total Including Tax])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="State_Province">
+        <DataField>City[State Province]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Employee">
+        <DataField>Employee[Employee]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Year_Label">
+        <DataField>Sale Invoice Date[Year Label]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Beginning_of_Month">
+        <DataField>Sale Invoice Date[Beginning of Month]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Beginning_of_Quarter_Label_Short">
+        <DataField>Sale Invoice Date[Beginning of Quarter Label Short]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Beginning_of_Month_Label_Short">
+        <DataField>Sale Invoice Date[Beginning of Month Label Short]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Sales_Total_Including_Tax">
+        <DataField>[Sales Total Including Tax]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+  <rd:ReportServerUrl>http://acdev2/ReportServer</rd:ReportServerUrl>
+</SharedDataSet>

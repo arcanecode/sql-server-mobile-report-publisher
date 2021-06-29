@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>/WWI Tabular</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="EmployeeEmployee">
+          <DefaultValue>0|</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+          <rd:IsMultiValued>true</rd:IsMultiValued>
+        </DataSetParameter>
+        <DataSetParameter Name="CityStateProvince">
+          <DefaultValue>0|</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+          <rd:IsMultiValued>true</rd:IsMultiValued>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>DEFINE VAR vEmployeeEmployee1 = IF(PATHLENGTH(@EmployeeEmployee) = 1, IF(@EmployeeEmployee &lt;&gt; "", @EmployeeEmployee, BLANK()), IF(PATHITEM(@EmployeeEmployee, 2) &lt;&gt; "", PATHITEM(@EmployeeEmployee, 2), BLANK()))
+VAR vEmployeeEmployee1ALL = PATHLENGTH(@EmployeeEmployee) &gt; 1 &amp;&amp; PATHITEM(@EmployeeEmployee, 1, 1) &lt; 1
+VAR vCityStateProvince1 = IF(PATHLENGTH(@CityStateProvince) = 1, IF(@CityStateProvince &lt;&gt; "", @CityStateProvince, BLANK()), IF(PATHITEM(@CityStateProvince, 2) &lt;&gt; "", PATHITEM(@CityStateProvince, 2), BLANK()))
+VAR vCityStateProvince1ALL = PATHLENGTH(@CityStateProvince) &gt; 1 &amp;&amp; PATHITEM(@CityStateProvince, 1, 1) &lt; 1
+EVALUATE ( SUMMARIZECOLUMNS('City'[State Province], 'Employee'[Employee], 'Sale Invoice Date'[Year Label], 'Sale Invoice Date'[Beginning of Month], 'Sale Invoice Date'[Beginning of Quarter Label Short], 'Sale Invoice Date'[Beginning of Month Label Short], FILTER(VALUES('Employee'[Employee]), ((vEmployeeEmployee1ALL || 'Employee'[Employee] = vEmployeeEmployee1))), FILTER(VALUES('City'[State Province]), ((vCityStateProvince1ALL || 'City'[State Province] = vCityStateProvince1))), "Sales Total Including Tax", [Sales Total Including Tax]) )
+ORDER BY 'Sale Invoice Date'[Beginning of Month], 'City'[State Province], 'Employee'[Employee]</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <Type>Query</Type>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>City</DimensionName>
+                    <HierarchyName>State Province</HierarchyName>
+                    <HierarchyUniqueName>[City].[State Province]</HierarchyUniqueName>
+                    <LevelName>State Province</LevelName>
+                    <UniqueName>[City].[State Province].[State Province]</UniqueName>
+                  </ID>
+                  <ItemCaption>State Province</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Employee</DimensionName>
+                    <HierarchyName>Employee</HierarchyName>
+                    <HierarchyUniqueName>[Employee].[Employee]</HierarchyUniqueName>
+                    <LevelName>Employee</LevelName>
+                    <UniqueName>[Employee].[Employee].[Employee]</UniqueName>
+                  </ID>
+                  <ItemCaption>Employee</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Year Label</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Year Label]</HierarchyUniqueName>
+                    <LevelName>Year Label</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Year Label].[Year Label]</UniqueName>
+                  </ID>
+                  <ItemCaption>Year Label</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Beginning of Month</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Beginning of Month]</HierarchyUniqueName>
+                    <LevelName>Beginning of Month</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Beginning of Month].[Beginning of Month]</UniqueName>
+                  </ID>
+                  <ItemCaption>Beginning of Month</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Beginning of Quarter Label Short</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Beginning of Quarter Label Short]</HierarchyUniqueName>
+                    <LevelName>Beginning of Quarter Label Short</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Beginning of Quarter Label Short].[Beginning of Quarter Label Short]</UniqueName>
+                  </ID>
+                  <ItemCaption>Beginning of Quarter Label Short</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Sale Invoice Date</DimensionName>
+                    <HierarchyName>Beginning of Month Label Short</HierarchyName>
+                    <HierarchyUniqueName>[Sale Invoice Date].[Beginning of Month Label Short]</HierarchyUniqueName>
+                    <LevelName>Beginning of Month Label Short</LevelName>
+                    <UniqueName>[Sale Invoice Date].[Beginning of Month Label Short].[Beginning of Month Label Short]</UniqueName>
+                  </ID>
+                  <ItemCaption>Beginning of Month Label Short</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Sales Total Including Tax</MeasureName>
+                    <UniqueName>[Measures].[Sales Total Including Tax]</UniqueName>
+                  </ID>
+                  <ItemCaption>Sales Total Including Tax</ItemCaption>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties />
+          </QuerySpecification>
+          <Query>
+            <Statement>DEFINE VAR vEmployeeEmployee1 = IF(PATHLENGTH(@EmployeeEmployee) = 1, IF(@EmployeeEmployee &lt;&gt; "", @EmployeeEmployee, BLANK()), IF(PATHITEM(@EmployeeEmployee, 2) &lt;&gt; "", PATHITEM(@EmployeeEmployee, 2), BLANK()))
+VAR vEmployeeEmployee1ALL = PATHLENGTH(@EmployeeEmployee) &gt; 1 &amp;&amp; PATHITEM(@EmployeeEmployee, 1, 1) &lt; 1
+VAR vCityStateProvince1 = IF(PATHLENGTH(@CityStateProvince) = 1, IF(@CityStateProvince &lt;&gt; "", @CityStateProvince, BLANK()), IF(PATHITEM(@CityStateProvince, 2) &lt;&gt; "", PATHITEM(@CityStateProvince, 2), BLANK()))
+VAR vCityStateProvince1ALL = PATHLENGTH(@CityStateProvince) &gt; 1 &amp;&amp; PATHITEM(@CityStateProvince, 1, 1) &lt; 1
+EVALUATE ( SUMMARIZECOLUMNS('City'[State Province], 'Employee'[Employee], 'Sale Invoice Date'[Year Label], 'Sale Invoice Date'[Beginning of Month], 'Sale Invoice Date'[Beginning of Quarter Label Short], 'Sale Invoice Date'[Beginning of Month Label Short], FILTER(VALUES('Employee'[Employee]), ((vEmployeeEmployee1ALL || 'Employee'[Employee] = vEmployeeEmployee1))), FILTER(VALUES('City'[State Province]), ((vCityStateProvince1ALL || 'City'[State Province] = vCityStateProvince1))), "Sales Total Including Tax", [Sales Total Including Tax]) )
+ORDER BY 'Sale Invoice Date'[Beginning of Month], 'City'[State Province], 'Employee'[Employee]</Statement>
+            <ParameterDefinitions>
+              <ParameterDefinition>
+                <Name>EmployeeEmployee</Name>
+                <DefaultValues>
+                  <DefaultValue>0|</DefaultValue>
+                </DefaultValues>
+                <Caption>Employee</Caption>
+                <HierarchyUniqueName>[Employee].[Employee]</HierarchyUniqueName>
+                <ParameterValuesQuery>
+                  <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Employee].[Employee].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Employee].[Employee].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Employee].[Employee].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Employee].[Employee].ALLMEMBERS ON ROWS FROM [Model]</Statement>
+                  <ParameterizedStatement>
+                    <ReferencedParameters />
+                  </ParameterizedStatement>
+                </ParameterValuesQuery>
+                <MultipleValues>true</MultipleValues>
+                <AllowBlank>true</AllowBlank>
+              </ParameterDefinition>
+              <ParameterDefinition>
+                <Name>CityStateProvince</Name>
+                <DefaultValues>
+                  <DefaultValue>0|</DefaultValue>
+                </DefaultValues>
+                <Caption>State Province</Caption>
+                <HierarchyUniqueName>[City].[State Province]</HierarchyUniqueName>
+                <ParameterValuesQuery>
+                  <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [City].[State Province].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [City].[State Province].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [City].[State Province].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [City].[State Province].ALLMEMBERS ON ROWS FROM [Model]</Statement>
+                  <ParameterizedStatement>
+                    <ReferencedParameters />
+                  </ParameterizedStatement>
+                </ParameterValuesQuery>
+                <MultipleValues>true</MultipleValues>
+                <AllowBlank>true</AllowBlank>
+              </ParameterDefinition>
+            </ParameterDefinitions>
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="State_Province">
+        <DataField>City[State Province]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Employee">
+        <DataField>Employee[Employee]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Year_Label">
+        <DataField>Sale Invoice Date[Year Label]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Beginning_of_Month">
+        <DataField>Sale Invoice Date[Beginning of Month]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Beginning_of_Quarter_Label_Short">
+        <DataField>Sale Invoice Date[Beginning of Quarter Label Short]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Beginning_of_Month_Label_Short">
+        <DataField>Sale Invoice Date[Beginning of Month Label Short]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Sales_Total_Including_Tax">
+        <DataField>[Sales Total Including Tax]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+  <rd:ReportServerUrl>http://acdev2/ReportServer</rd:ReportServerUrl>
+</SharedDataSet>

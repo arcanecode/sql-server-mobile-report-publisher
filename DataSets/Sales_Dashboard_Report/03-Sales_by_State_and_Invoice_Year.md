@@ -32,7 +32,7 @@ Expand the **Measures** branch, then the **Sales** branch.
 
 Drag the **Sales Total Including Tax** to the designer area.
 
-Next, expand the **City** dimension, and drag the **State Provice** to the designer to the left of the Sales Total Including Tax.
+Next, expand the **City** dimension, and drag the **State Province** to the designer to the left of the Sales Total Including Tax.
 
 Finally, expand the **Sales Invoice Date** branch. Drag the **Year Label** column and drop it between the two columns already in the designer.
 

@@ -44,3 +44,29 @@ With the source selected, click the Create button in the lower right.
 ![Create data set](images/select-data-source-02.png)
 
 At this point you are presented with the empty query designer. From this point follow the instructions for each dataset, located in their own markdown files. They will assume you've followed these steps and are at an empty query designer.
+
+---
+
+## Author Information
+
+### Author
+
+Robert C. Cain | [@ArcaneCode](https://twitter.com/arcanecode) | arcanecode@gmail.com
+
+### Websites
+
+About Me: [http://arcanecode.me](http://arcanecode.me)
+
+Blog: [http://arcanecode.com](http://arcanecode.com)
+
+Github: [http://arcanerepo.com](http://arcanerepo.com)
+
+LinkedIn: [http://arcanecode.in](http://arcanecode.in)
+
+### Copyright Notice
+
+This document is Copyright (c) 2021 Robert C. Cain. All rights reserved.
+
+The code samples herein is for demonstration purposes. No warranty or guarantee is implied or expressly granted.
+
+This document may not be reproduced in whole or in part without the express written consent of the author and/or Pluralsight. Information within can be used within your own projects.

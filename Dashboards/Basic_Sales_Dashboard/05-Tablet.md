@@ -29,3 +29,28 @@ Finally place the simple data grid at the bottom, and let it take up the remaini
 Click on the Preview tab to get an idea of how the tablet version of the report works. Note how you can use the mouse to trigger a pop up, just as on the regular dashboard. On a tablet of course, this would happen using a finger or a stylus.
 
 You are now ready to proceed to the final step, designing for the phone, found in [06-Phone.md](06-Phone.md).
+---
+
+## Author Information
+
+### Author
+
+Robert C. Cain | [@ArcaneCode](https://twitter.com/arcanecode) | arcanecode@gmail.com
+
+### Websites
+
+About Me: [http://arcanecode.me](http://arcanecode.me)
+
+Blog: [http://arcanecode.com](http://arcanecode.com)
+
+Github: [http://arcanerepo.com](http://arcanerepo.com)
+
+LinkedIn: [http://arcanecode.in](http://arcanecode.in)
+
+### Copyright Notice
+
+This document is Copyright (c) 2021 Robert C. Cain. All rights reserved.
+
+The code samples herein is for demonstration purposes. No warranty or guarantee is implied or expressly granted.
+
+This document may not be reproduced in whole or in part without the express written consent of the author and/or Pluralsight. Information within can be used within your own projects.

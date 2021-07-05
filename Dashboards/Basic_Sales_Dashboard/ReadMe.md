@@ -27,3 +27,29 @@ In the advanced report we'll use more advanced concepts such as linking elements
 ## Conclusion
 
 Let's get started, proceed to the first set of instructions, found in the file [01-Building_the_Dashboard.md](01-Building_the_Dashboard.md)
+
+---
+
+## Author Information
+
+### Author
+
+Robert C. Cain | [@ArcaneCode](https://twitter.com/arcanecode) | arcanecode@gmail.com
+
+### Websites
+
+About Me: [http://arcanecode.me](http://arcanecode.me)
+
+Blog: [http://arcanecode.com](http://arcanecode.com)
+
+Github: [http://arcanerepo.com](http://arcanerepo.com)
+
+LinkedIn: [http://arcanecode.in](http://arcanecode.in)
+
+### Copyright Notice
+
+This document is Copyright (c) 2021 Robert C. Cain. All rights reserved.
+
+The code samples herein is for demonstration purposes. No warranty or guarantee is implied or expressly granted.
+
+This document may not be reproduced in whole or in part without the express written consent of the author and/or Pluralsight. Information within can be used within your own projects.

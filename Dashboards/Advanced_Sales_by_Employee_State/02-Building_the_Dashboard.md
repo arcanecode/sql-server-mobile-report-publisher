@@ -26,4 +26,30 @@ The final control is a _Grandient heat map_. Place it beside the simple data gri
 
 ## Conclusion
 
-That was fast and easy. In the next lesson we'll make the magic happen by linking the report components to the data, so proceed to [](http://)
+That was fast and easy. In the next lesson we'll make the magic happen by linking the report components to the data, so proceed to [03-Linking_Report_Components.md](03-Linking_Report_Components.md).
+
+---
+
+## Author Information
+
+### Author
+
+Robert C. Cain | [@ArcaneCode](https://twitter.com/arcanecode) | arcanecode@gmail.com
+
+### Websites
+
+About Me: [http://arcanecode.me](http://arcanecode.me)
+
+Blog: [http://arcanecode.com](http://arcanecode.com)
+
+Github: [http://arcanerepo.com](http://arcanerepo.com)
+
+LinkedIn: [http://arcanecode.in](http://arcanecode.in)
+
+### Copyright Notice
+
+This document is Copyright (c) 2021 Robert C. Cain. All rights reserved.
+
+The code samples herein is for demonstration purposes. No warranty or guarantee is implied or expressly granted.
+
+This document may not be reproduced in whole or in part without the express written consent of the author and/or Pluralsight. Information within can be used within your own projects.

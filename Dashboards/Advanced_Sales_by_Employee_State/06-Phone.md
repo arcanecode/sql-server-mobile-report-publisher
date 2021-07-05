@@ -35,3 +35,28 @@ Save your work, then hit Preview. Here is the final phone dashboard with the Tec
 Congratulations, you've now completed the advanced dashboard!
 
 Well, almost. There is one more optional step. Dashboard have the ability to "Drill Through" to a another dashboard, or a website. You can use this to launch a SSRS Paginated Report. In the next lesson, [07-Drillthru.md](07-Drillthru.md), you'll see how to do it.
+---
+
+## Author Information
+
+### Author
+
+Robert C. Cain | [@ArcaneCode](https://twitter.com/arcanecode) | arcanecode@gmail.com
+
+### Websites
+
+About Me: [http://arcanecode.me](http://arcanecode.me)
+
+Blog: [http://arcanecode.com](http://arcanecode.com)
+
+Github: [http://arcanerepo.com](http://arcanerepo.com)
+
+LinkedIn: [http://arcanecode.in](http://arcanecode.in)
+
+### Copyright Notice
+
+This document is Copyright (c) 2021 Robert C. Cain. All rights reserved.
+
+The code samples herein is for demonstration purposes. No warranty or guarantee is implied or expressly granted.
+
+This document may not be reproduced in whole or in part without the express written consent of the author and/or Pluralsight. Information within can be used within your own projects.
